@@ -59,6 +59,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converters.cs" />
+    <Compile Include="Data2VM.cs" />
+    <Compile Include="Data2VMIntermediate.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
@@ -95,9 +98,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FrameworkComponent\FrameworkComponent.csproj">
+    <ProjectReference Include="..\FrameworkComponent\Dependee.csproj">
       <Project>{09c241c5-d2db-4fc4-9d47-c08c7ff02cee}</Project>
-      <Name>FrameworkComponent</Name>
+      <Name>Dependee</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

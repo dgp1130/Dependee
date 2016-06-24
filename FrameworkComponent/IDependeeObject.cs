@@ -5,12 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FrameworkComponent
+namespace Dependee
 {
     /// <summary>
     /// Interface for a user of the DependencyManager
     /// </summary>
-    public interface IDependencyUser : INotifyPropertyChanged
+    public interface IDependeeObject : INotifyPropertyChanged
     {
         /// <summary>
         /// Trigger the PropertyChanged event from INotifyPropertyChanged with the parameters given

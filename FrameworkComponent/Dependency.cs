@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FrameworkComponent
+namespace Dependee
 {
     /// <summary>
     /// Mark this property as dependent on the given property name
