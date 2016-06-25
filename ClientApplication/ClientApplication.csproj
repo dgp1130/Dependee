@@ -98,7 +98,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FrameworkComponent\Dependee.csproj">
+    <ProjectReference Include="..\Dependee\Dependee.csproj">
       <Project>{09c241c5-d2db-4fc4-9d47-c08c7ff02cee}</Project>
       <Name>Dependee</Name>
     </ProjectReference>

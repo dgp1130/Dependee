@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dependee", "FrameworkComponent\Dependee.csproj", "{09C241C5-D2DB-4FC4-9D47-C08C7FF02CEE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dependee", "Dependee\Dependee.csproj", "{09C241C5-D2DB-4FC4-9D47-C08C7FF02CEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientApplication", "DependencyFramework\ClientApplication.csproj", "{E871A840-5450-4CAB-B4FD-4D87020D73E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientApplication", "ClientApplication\ClientApplication.csproj", "{E871A840-5450-4CAB-B4FD-4D87020D73E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
