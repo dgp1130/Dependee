@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DependencyFramework
+namespace ClientApplication
 {
     // Intermediate class to test that dependencies can follow multiple levels of indirection
     public class Data2VMIntermediate

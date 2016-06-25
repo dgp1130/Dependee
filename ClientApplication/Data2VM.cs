@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DependencyFramework
+namespace ClientApplication
 {
     // Separate view model to test dependencies between different objects
     public class Data2ViewModel : IDependeeObject

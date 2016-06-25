@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Data;
 
-namespace DependencyFramework.Converters
+namespace ClientApplication.Converters
 {
     // Convert a boolean value to Visibility.Visible or Visibility.Collapsed
     public class BooleanToVisibilityConverter : IValueConverter

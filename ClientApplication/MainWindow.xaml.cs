@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 using System.ComponentModel;
 using Dependee;
 
-namespace DependencyFramework
+namespace ClientApplication
 {
     // Implement IDependencyUser to take advantage of DependencyManager
     public partial class MainWindow : Window, IDependeeObject
