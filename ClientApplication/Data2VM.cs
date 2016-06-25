@@ -24,13 +24,13 @@ namespace ClientApplication
             set
             {
                 data2 = value;
-                DependeeManager.Instance.Update(this, "Data2"); // Data2 has updated
+                DependeeManager.Update(this, "Data2"); // Data2 has updated
             }
         }
 
         public Data2ViewModel(MainWindow owner)
         {
-            DependeeManager.Instance.Manage(this); // Make this a managed object
+            DependeeManager.Manage(this); // Make this a managed object
 
             this.owner = owner;
         }

@@ -12,26 +12,12 @@ namespace Dependee
     /// A dependency manager for the object it is given.
     /// Updates properties automatically based on their dependencies.
     /// </summary>
-    public class DependeeManager
+    public static class DependeeManager
     {
-        private Dictionary<string, List<DependeeInfo>> DependencyMap = new Dictionary<string, List<DependeeInfo>>();
-
-        // Singleton instance of manager class
-        private static DependeeManager instance;
-        public static DependeeManager Instance
-        {
-            get
-            {
-                if (instance == null) instance = new DependeeManager();
-                return instance;
-            }
-        }
-
-        // Declare private constructor to prevent public construction
-        private DependeeManager() { }
+        private static Dictionary<string, List<DependeeInfo>> DependencyMap = new Dictionary<string, List<DependeeInfo>>();
 
         // Manage the given dependee object
-        public void Manage(IDependeeObject sender)
+        public static void Manage(IDependeeObject sender)
         {
             // Search all properties of given object
             PropertyInfo[] properties = sender.GetType().GetProperties();
@@ -71,7 +57,7 @@ namespace Dependee
         }
 
         // Update the given property and its dependencies
-        public void Update(IDependeeObject sender, string name)
+        public static void Update(IDependeeObject sender, string name)
         {
             // Trigger event notification of update
             sender.PropertyChangedTrigger(sender, new PropertyChangedEventArgs(name));
@@ -81,7 +67,7 @@ namespace Dependee
         }
 
         // Update the given property and its dependencies
-        private void UpdateRecur(object sender, DependeeInfo dependent)
+        private static void UpdateRecur(object sender, DependeeInfo dependent)
         {
             // Follow the path from dependent's sender to find owning object
             object resolvedSender = dependent.Sender;

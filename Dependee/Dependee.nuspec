@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Douglas Parker</authors>
+    <owners>Douglas Parker</owners>
+	<language>XAML/C#</language>
+    <licenseUrl>https://raw.githubusercontent.com/dgp1130/Dependee/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/dgp1130/Dependee</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Does all the significant things, will probably be cleaned up and improved later.</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>Dependency DependencyManager Property C# XAML</tags>
+  </metadata>
+</package>

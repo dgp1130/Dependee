@@ -32,7 +32,7 @@ namespace ClientApplication
             set
             {
                 data = value;
-                DependeeManager.Instance.Update(this, "Data"); // Data has updated
+                DependeeManager.Update(this, "Data"); // Data has updated
             }
         }
 
@@ -53,7 +53,7 @@ namespace ClientApplication
         public MainWindow()
         {
             Data2VMInt = new Data2VMIntermediate(this);
-            DependeeManager.Instance.Manage(this); // Make this a managed object
+            DependeeManager.Manage(this); // Make this a managed object
 
             InitializeComponent();
         }
